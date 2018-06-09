@@ -10,3 +10,4 @@ builtin exit
 here=`pwd`
 export PATH=${PATH}:$here/edirect >& /dev/null || setenv PATH "${PATH}:$here/edirect"
 ./edirect/setup.sh
+echo "export PATH=\$PATH:$here/edirect" >> $HOME/.bash_profile
