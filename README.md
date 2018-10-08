@@ -13,7 +13,15 @@ Just include this image in your `Dockerfile`:
 	FROM daknuett/edirect
 
 All the scripts are installed under `/install/edirect`. The
-paths are set accordingly.
+paths are set accordingly. 
+
+The `Dockerfile` sets up the `EDIRECT_PUBMED_MASTER` at
+`/data`.
+
+You can also run an interactive shell in the container in
+order to modify your data.
+
+	docker run -it -v /path/to/your/pubmed_master:/data daknuett/edirect bash
 
 ## Bases
 
