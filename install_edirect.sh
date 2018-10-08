@@ -6,8 +6,8 @@ perl -MNet::FTP -e \
    $ftp->get("/entrez/entrezdirect/edirect.tar.gz");'
 gunzip -c edirect.tar.gz | tar xf -
 rm edirect.tar.gz
-builtin exit
 here=`pwd`
 export PATH=${PATH}:$here/edirect >& /dev/null || setenv PATH "${PATH}:$here/edirect"
 ./edirect/setup.sh
-echo "export PATH=\$PATH:$here/edirect" >> $HOME/.bash_profile
+echo "export PATH=\$PATH:$here/edirect" >> $HOME/.bashrc
+echo "export EDIRECT_PUBMED_MASTER=/data" >> $HOME/.bashrc
