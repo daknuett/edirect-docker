@@ -1,3 +1,7 @@
+# This repository is deprecated.
+
+Use the official image [`ncbi/edirect`](https://hub.docker.com/r/ncbi/edirect) instead.
+
 # edirect-docker
 
 edirect-docker is the [Docker](https://hub.docker.com) base
